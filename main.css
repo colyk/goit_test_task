@@ -1,0 +1,11 @@
+#boxes { display: flex; flex-wrap: wrap; }
+#boxes div { margin: 5px; }
+
+ul { display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0;
+}
+li { list-style-type: none; padding: 2px 4px; }
+img { width: 340px; height: 340px; }
