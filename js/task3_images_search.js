@@ -5,8 +5,8 @@ const IMAGES_PP = 20;
 let last_query;
 let current_page = 0;
 
-var imagesContainer = document.getElementsByTagName('ul')[0];
-var searchInput = document.getElementById('search-form').getElementsByTagName('input')[0];
+const imagesContainer = document.getElementsByTagName('ul')[0];
+const searchInput = document.getElementById('search-form').getElementsByTagName('input')[0];
 
 const observer = new IntersectionObserver(onIntersection);
 
@@ -73,6 +73,6 @@ function onImageCardClick(e) {
   e.preventDefault();
   let img = e.target;
   let a = img.parentElement;
-  basicLightbox.create(`<img src="${a.href}" alt="img.alt">`).show();
+  basicLightbox.create(`<img src="${a.href}" alt="${img.alt}">`).show();
 }
 
